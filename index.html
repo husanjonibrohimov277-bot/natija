@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ixtisoslashtirilgan ta'lim muassasalari agentligi tizimidagi Qo'qon shahar 1-son ixtisoslashtirilgan maktabi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        section {
+            display: none; /* Barcha bo'limlar yashirin */
+            padding: 20px;
+            margin: 10px;
+            background: #eeeeee; /* Sariq rangga yaqin fon */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background: #007BFF; /* Tugma rang */
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #0056b3; /* Hover rang */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        h2 {
+            color: #FFC107; /* Sariq rang */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .yil {
+            color: #28a745; /* Pastel rang */
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Agentlik Logosi">
+    <h1>Ixtisoslashtirilgan ta'lim muassasalari agentligi tizimidagi Qo'qon shahar 1-son ixtisoslashtirilgan maktabi</h1>
+</header>
+
+<div id="buttons">
+    <button onclick="showSection('ona-tili')">Ona tili va adabiyoti</button>
+    <button onclick="showSection('ielts')">IELTS</button>
+    <button onclick="showSection('sat')">SAT</button>
+    <button onclick="showSection('matematika')">Matematika</button>
+    <button onclick="showSection('tarix')">Tarix</button>
+    <button onclick="showSection('cefr')">CEFR</button>
+    <button onclick="showSection('fizika')">Fizika</button>
+    <button onclick="showSection('attestatsiya')">Attestatsiya natijalari</button>
+    <button onclick="showSection('olimpiada')">Olimpiada natijalari</button>
+</div>
+
+<section id="ona-tili">
+    <h2>Ona tili</h2>
+    <p>Ona tili va adabiyoti fanidan erishilgan yutuqlar. Ushbu bo'limda o'quvchilarimizning ona tilidagi bilimlari haqida ma'lumotlar beriladi.</p>
+    <img src="ona_tili_rasm1.jpg" alt="Ona tili fanidan rasm 1">
+      <button onclick="goBack()">Orqaga</button>
+</section>
+
+<section id="ielts">
+    <h2>IELTS</h2>
+    <p>IELTS serifikatlari. O'quvchilarimizning xalqaro darajadagi til bilimlari ushbu bo'limda ko'rsatiladi.</p>
+    <img src="ielts_rasm1.jpg" alt="IELTS rasm 1">
+    <button onclick="goBack()">Orqaga</button>
+</section>
+
+<section id="sat">
+    <h2>SAT</h2>
+    <p>SAT sertifikatlari. Ushbu bo'limda o'quvchilarimizning ta'lim sifatlari butunlay taqdim etiladi.</p>
+    <img src="sat_rasm1.jpg" alt="SAT rasm 1">
+    <button onclick="goBack()">Orqaga</button>
+</section>
+
+<section id="matematika">
+    <h2>Matematika</h2>
+    <p>Matematika fanidan erishilgan yutuqlar. O'quvchilarimiz matematik bilimlarining amaliy ko'rsatkichlari taqdim etiladi.</p>
+    <img src="matematika_rasm1.jpg" alt="Matematika rasm 1">
+    <button onclick="goBack()">Orqaga</button>
+</section>
+
+<section id="tarix">
+    <h2>Tarix</h2>
+    <p>Tarix fanidan erishilgan yutuqlar. O'quvchilarimizning tarixiy bilimlari haqida ma'lumotlar beriladi.</p>
+    <img src="tarix_rasm1.jpg" alt="Tarix rasm 1">
+    <button onclick="goBack()">Orqaga</button>
+</section>
+
+<section id="cefr">
+    <h2>CEFR</h2>
+    <p>CEFR sertifikatlari. Ushbu bo'limda o'quvchilarimizning til ko'nikmalarini baholash ko'rsatiladi.</p>
+    <img src="cefr_rasm1.jpg" alt="CEFR rasm 1">
+    <button onclick="goBack()">Orqaga</button>
+</section>
+
+<section id="fizika">
+    <h2>Fizika</h2>
+    <p>Fizika fanidan erishilgan yutuqlar. O'quvchilarimiz fizika bilimlarining natijalari taqdim etiladi.</p>
+    <img src="fizika_rasm1.jpg" alt="Fizika rasm 1">
+    <button onclick="goBack()">Orqaga</button>
+</section>
+
+<section id="attestatsiya">
+    <h2>Attestatsiya natijalari</h2>
+    <p>O'qituvchilarimiznin attestatsiya attestatsiya imtihonlarida qayd etgan natijalari</p>
+    <img src="attestatsiya_rasm1.jpg" alt="Attestatsiya natijalari rasm 1">
+    <p>Jalolxon Ravshanjonovich Matematika fanidan Attestatsiya jarayonlarida 94 ballni qo'lga kiritgan holda Oliy toifaga ega</p>
+    <button onclick="goBack()">Orqaga</button>
+</section>
+
+<section id="olimpiada">
+    <h2>Olimpiada natijalari</h2>
+    <p>Milliy va xalqaro olimpiadalardagi muvaffaqiyatlar ushbu bo'limda ko'rsatiladi.</p>
+    <img src="olimpiada_rasm1.jpg" alt="Olimpiada rasm 1">
+  <p>Kamolov Hasanjon Rahim o'g'li Fizika fanidan "Xalqaro ochiq astranomiya olimpiadasi"da bronza medalini qo'lga kiritgan</p>
+       <button onclick="goBack()">Orqaga</button>
+</section>
+
+<footer>
+    <p>&copy; 2026 Qo'qon shahar 1-son ixtisoslashtirilgan maktabi
+    Manzil: Yangi Chorsu ko'chasi, 227-uy
+    Mo'ljal: Hamza teatri ro'parasi.
+    Aloqa uchun: +998 91 130 05 15, +998 91 200 15 75
+    Telegram: @QOQON1IM</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        // Barcha bo'limlarni yashirish
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.style.display = 'none'; // Yashirish
+        });
+        
+        // Tugmalarni yashirish
+        document.getElementById('buttons').style.display = 'none';
+
+        // Tanlangan bo'limni ko'rsatish
+        const selectedSection = document.getElementById(sectionId);
+        selectedSection.style.display = 'block'; // Ko'rsatish
+    }
+
+    function goBack() {
+        // Barcha bo'limlarni yashirish
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.style.display = 'none'; // Yashirish
+        });
+
+        // Tugmalarni ko'rsatish
+        document.getElementById('buttons').style.display = 'block';
+    }
+
+    // Dastlabki tugmalarni ko'rsatish
+    document.getElementById('buttons').style.display = 'block';
+</script>
+
+</body>
+</html>
